@@ -1,0 +1,60 @@
+.btn {
+  background: #f5bd31;
+  background-image: -webkit-linear-gradient(top, #f5bd31, #d6932d);
+  background-image: -moz-linear-gradient(top, #f5bd31, #d6932d);
+  background-image: -ms-linear-gradient(top, #f5bd31, #d6932d);
+  background-image: -o-linear-gradient(top, #f5bd31, #d6932d);
+  background-image: linear-gradient(to bottom, #f5bd31, #d6932d);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  user-select: none;
+}
+
+.btn:hover {
+  background: #e0a92a;
+  background-image: -webkit-linear-gradient(top, #e0a92a, #b37b26);
+  background-image: -moz-linear-gradient(top, #e0a92a, #b37b26);
+  background-image: -ms-linear-gradient(top, #e0a92a, #b37b26);
+  background-image: -o-linear-gradient(top, #e0a92a, #b37b26);
+  background-image: linear-gradient(to bottom, #e0a92a, #b37b26);
+  text-decoration: none;
+}
+
+@media screen and (max-width:650px){
+	.btn {
+		font-size: 0.6em;
+		padding: 7px 15px 7px 15px;
+		margin-top: 1px;
+	}
+}
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.svg-icon:hover path,
+.svg-icon:hover polygon,
+.svg-icon:hover rect{
+  fill: #52B3FF;
+}
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ffffff;
+}
+
+.svg-icon circle {
+  stroke: #ffffff;
+  stroke-width: 1;
+}
