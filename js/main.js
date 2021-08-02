@@ -162,7 +162,9 @@ $("#draw").on("click",function(){
 			$("#result_cart").css("background-image","");
 			$(".card_title").show();
 			$("#drawout_result").show();
-			$("#drawout_result").css("text-shadow","0 0 8px rgba(225,0,0,1)");
+			$("#drawout_result").css({"text-shadow":"0 0 17px rgba(0,0,0,1)",
+									  "color":"rgba(0,0,0,0)",
+									 });
 		}
 	},1);
 	
@@ -174,17 +176,25 @@ $("#draw").on("click",function(){
 	$('body').css('overflow','hidden');
 	
 	$("#draw_result").fadeIn(500);
+	
+//	setTimeout(function(){
+//		$(".card_title").fadeIn(1000);
+//		$("#drawout_result").fadeIn(1100);
+//
+//	},1300);
 	setTimeout(function(){
-		//$(".card_title").fadeIn(1000);
-		//$("#drawout_result").fadeIn(1100);
-		$("#drawout_result").css("text-shadow","0 0 0px rgba(0,0,0,1)");
-	},1300);
+		clearInterval(check_card_bg);
+		$("#result_cart").find("#drawout_result").css({
+					"text-shadow":"0 0 0px rgba(0,0,0,1)",
+					"color":"rgba(0,0,0,1)",
+					});
+	},1500);
+	
 	$("#draw_result").css({"display":"flex"});
 });
 $("#finish").on("click",function(){
 	$("#draw_result").fadeOut(500);
 	$('body').css('overflow',"");
-	clearInterval(check_card_bg);
 });
 
 
